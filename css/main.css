@@ -456,12 +456,6 @@ button {
   margin-bottom: 0;
 }
 
-.exp-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .exp-list .item {
   margin-right: 30px;
 }
