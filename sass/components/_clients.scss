@@ -1,0 +1,33 @@
+.clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+}
+
+.client-list {
+  /* outline: 2px solid tomato; */
+  margin-right: 30px;
+  list-style: none;
+  padding: 0;
+}
+
+.client-list:last-child {
+  margin-right: 0px;
+}
+
+.client-card {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  width: 170px;
+  height: 90px;
+  justify-content: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.client-card:hover {
+  border: 1px solid $accent;
+  --color3: #2196f3;
+}

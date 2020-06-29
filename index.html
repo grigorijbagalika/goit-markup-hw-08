@@ -17,42 +17,64 @@
   </head>
   <body>
     <!--Навигация-->
-    <header>
+    <header class="page-header">
       <div class="conteiner main-nav bord">
         <nav class="main-nav">
           <a href="/">
             <p class="logo-text"><span class="logo">Web</span> Studio</p>
           </a>
-          <ul class="site-nav list">
-            <li class="item li-psevdo">
-              <a href="" class="site-nav link current psevdo">Студия</a>
-            </li>
-            <li class="item li-psevdo">
-              <a href="./portfolio.html" class="link psevdo">Портфолио</a>
-            </li>
-            <li class="item li-psevdo">
-              <a href="" class="link psevdo">Контакты</a>
-            </li>
-          </ul>
+          <button type="button" class="burger-btn" data-menu-button>
+            <svg
+              width="40px"
+              height="40px"
+              aria-expanded="false"
+              aria-controls="menu-conteiner"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="icon-menu"
+                href="./image/mobilemenu.svg#icon-menu_40px"
+              ></use>
+              <use
+                class="icon-close"
+                href="./image/mobilemenu.svg#icon-close_40px"
+              ></use>
+            </svg>
+          </button>
+          <div class="menu-conteiner" id="menu-conteiner" data-menu>
+            <ul class="mobile-sn site-nav list">
+              <li class="item li-psevdo">
+                <a href="" class="site-nav link current psevdo">Студия</a>
+              </li>
+              <li class="item li-psevdo">
+                <a href="./portfolio.html" class="link psevdo">Портфолио</a>
+              </li>
+              <li class="item li-psevdo">
+                <a href="" class="link psevdo">Контакты</a>
+              </li>
+            </ul>
+            <ul class="auth-nav list">
+              <li class="item">
+                <a href="mailto:info@devstudio.com" class="icon-envelope link"
+                  >info@devstudio.com
+                  <svg class="svg-envelope" width="16px" height="12px">
+                    <use
+                      href="./image/symbol-defs.svg#icon-envelope-logo"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item">
+                <a href="tel:+380961111111" class="icon-vector link"
+                  >+38 096 111 11 11
+                  <svg class="svg-vector" width="15px" height="20px" ;>
+                    <use href="./image/symbol-defs.svg#icon-vector"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
-        <ul class="auth-nav list">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="icon-envelope link"
-              >info@devstudio.com
-              <svg class="svg-envelope" width="16px" height="12px">
-                <use href="./image/symbol-defs.svg#icon-envelope-logo"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="item">
-            <a href="tel:+380961111111" class="icon-vector link"
-              >+38 096 111 11 11
-              <svg class="svg-vector" width="15px" height="20px" ;>
-                <use href="./image/symbol-defs.svg#icon-vector"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
       </div>
     </header>
 
@@ -663,5 +685,7 @@
           });
       })();
     </script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

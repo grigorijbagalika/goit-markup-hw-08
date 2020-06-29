@@ -1,0 +1,43 @@
+.exp-list {
+  display: flex;
+}
+
+.exp-list .item {
+  margin-right: 30px;
+}
+
+.exp-list .item:last-child {
+  margin-right: 0;
+}
+
+.experience-image {
+  position: relative;
+}
+
+.image-block {
+  display: block;
+}
+
+.experience-thumb {
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  padding: 27px 82px;
+  /* outline: 2px solid tomato; */
+  left: 0;
+  bottom: 0;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.experience-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  /* color: var(--white); */
+  color: $white;
+  text-align: center;
+}
